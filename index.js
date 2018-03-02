@@ -30,14 +30,13 @@ function promptInput(context, user, conversation) {
     if (!user.ment) {
         conversation.prompt = 'ment';
         const message = MessageStyler.carousel([
-            CardStyler.heroCard('Mentee', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/mentee.jpg'], [{ title: 'Choose', value: 'Mentee', type: 'postBack' }]),
-            CardStyler.heroCard('Mentor', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/mentor.jpg'], [{ title: 'Choose', value: 'Mentor', type: 'postBack' }]),
+            CardStyler.heroCard('Mentee', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/mentee.jpg'], [{ title: 'Mentee', value: 'Mentee', type: 'postBack' }]),
+            CardStyler.heroCard('Mentor', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/mentor.jpg'], [{ title: 'Mentor', value: 'Mentor', type: 'postBack' }]),
         ]);
         context.reply(message);
         return true;
     }
-    if (!user.codeOfConduct) {
-      
+    if (!user.codeOfConduct) {      
         conversation.prompt = 'codeOfConduct'
         let message = MessageStyler.contentUrl('https://mentoblob.blob.core.windows.net/code/Code%20of%20conduct.docx', 'docx', 'Code Of Conduct', 'Please read Code of Conduct');
         context.reply(message);
