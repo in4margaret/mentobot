@@ -30,8 +30,8 @@ function promptInput(context, user, conversation) {
     if (!user.ment) {
         conversation.prompt = 'ment';
         const message = MessageStyler.carousel([
-            CardStyler.heroCard('Mentee', ['https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg'], [{ title: 'Choose', value: 'Mentee', type: 'postBack' }]),
-            CardStyler.heroCard('Mentor', ['https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg'], [{ title: 'Choose', value: 'Mentor', type: 'postBack' }]),
+            CardStyler.heroCard('Mentee', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/mentee.jpg'], [{ title: 'Choose', value: 'Mentee', type: 'postBack' }]),
+            CardStyler.heroCard('Mentor', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/mentor.jpg'], [{ title: 'Choose', value: 'Mentor', type: 'postBack' }]),
         ]);
         context.reply(message);
         return true;
@@ -54,9 +54,9 @@ function promptInput(context, user, conversation) {
         // Prompt user for their locationss
         conversation.prompt = 'location';
         const message = MessageStyler.carousel([
-            CardStyler.heroCard('Seattle', ['https://cdn.pixabay.com/photo/2014/08/11/21/44/seattle-416065_1280.jpg'], [{ title: 'Choose', value: 'Seattle', type: 'postBack' }]),
-            CardStyler.heroCard('Toronto', ['https://cdn.pixabay.com/photo/2018/01/27/23/46/waters-3112508_1280.jpg'], [{ title: 'Choose', value: 'Toronto', type: 'postBack' }]),
-            CardStyler.heroCard('Boston', ['https://cdn.pixabay.com/photo/2015/12/19/03/11/boston-1099418_1280.jpg'], [{ title: 'Choose', value: 'Boston', type: 'postBack' }]),
+            CardStyler.heroCard('Seattle', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/Seattle.PNG'], [{ title: 'Choose', value: 'Seattle', type: 'postBack' }]),
+            CardStyler.heroCard('Toronto', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/Toronto.PNG'], [{ title: 'Choose', value: 'Toronto', type: 'postBack' }]),
+            CardStyler.heroCard('Boston', ['https://raw.githubusercontent.com/in4margaret/mentobot/master/assets/Boston.PNG'], [{ title: 'Choose', value: 'Boston', type: 'postBack' }]),
         ]);
         context.reply(message);
         return true;
