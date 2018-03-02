@@ -1,0 +1,22 @@
+{
+  "name": "mentobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Margaret Ostpchuk",
+  "license": "MIT",
+  "dependencies": {
+    "@microsoft/recognizers-text-suite": "^1.0.0-rc.32.0",
+    "azure-storage": "^2.8.0",
+    "botbuilder": "^4.0.0-m1.4",
+    "botbuilder-services": "^4.0.0-m1.2",
+    "dotenv": "^5.0.0",
+    "install": "^0.10.4",
+    "npm": "^5.6.0",
+    "restify": "^6.3.4"
+  }
+}
